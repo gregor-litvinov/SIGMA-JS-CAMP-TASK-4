@@ -1,0 +1,59 @@
+.about-area {
+  .container {
+    .about-row {
+      display: flex;
+      .about-col1 {
+        .image-line {
+          &:before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            right: 20px;
+            bottom: 20px;
+            z-index: -1;
+            border-radius: 140px 0;
+            border: 2px solid #b0855b;
+          }
+          &:after {
+            display: none;
+          }
+        }
+        
+      }
+      .about-col2 {
+        max-width: 503px;
+        padding: 20px 20px;
+        margin-left: 74px;
+
+        .about-text {
+          .section-heading {
+            h4 {
+              font-family: "Poppins";
+              font-size: 20px;
+              font-weight: 500;
+              color: #646464;
+              margin-bottom: 61px;
+            }
+
+            h3 {
+              color: #212121;
+              font-family: "Poppins";
+              font-size: 48px;
+              font-weight: 500px;
+              line-height: 57px;
+
+            }
+
+            p {
+              color: #646464;
+              font-family: "Open Sans";
+              font-weight: 400;
+              line-height: 30px
+            }
+          }
+        }
+      }
+    }
+  }
+}

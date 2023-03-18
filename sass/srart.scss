@@ -1,0 +1,111 @@
+.start {
+  padding: 70px 0;
+  .container {
+    .start-wrapper {
+      display: flex;
+      .content {
+        max-width: 641px;
+        width: 100%;
+        padding-right: 17px;
+        margin-top: 42px;
+
+        .subTitle {
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #646464;
+          font-weight: 600;
+          line-height: 27%;
+        }
+        .title {
+          font-size: 72px;
+          text-transform: capitalize;
+          font-family: "Popins";
+          font-weight: 600;
+          line-height: 78px;
+          color: #212121;
+          max-width: 580px;
+        }
+        .description {
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #646464;
+          }
+        }
+        .last {
+          margin-top: 20px;
+          // .btn {
+          //   text-decoration: none;
+          //   background-color: #37806b;
+          //   padding: 10px 20px;
+          //   border-radius: 15px 0px;
+          //   color: #ffff;
+          //   font-weight: 700;
+          //   font-size: 18px;
+          //   text-transform: uppercase;
+          //   transform: 0.3s;
+
+          //   &:hover {
+          //     background-color: #caa892;
+          //   }
+          // }
+        }
+      }
+      .image {
+        position: relative;
+        z-index: 1;
+
+
+        img {
+           width: 100%;
+          height: 100%;
+          border-radius: 140px 0;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          left: 20px;
+          top: 20px;
+          z-index: -1;
+          border-radius: 140px 0;
+          border: 2px solid #b0855b;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .start {
+    flex-direction: column;
+  }
+  .start .image img {
+    height: 15rem;
+    margin-top: 4rem;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .start-wrapper {
+    flex-direction: column;
+  }
+  .start-wrapper .image img {
+    height: 40rem;
+    margin-top: 4rem;
+    display: none;
+  }
+  .start-wrapper .content .title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+}
+
+// @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+//   .start-wrapper .image {
+//     display: none;
+//   }
+// }

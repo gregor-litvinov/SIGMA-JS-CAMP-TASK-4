@@ -1,0 +1,69 @@
+.success {
+  padding: 70px 0;
+  .container {
+    .start-wrapper {
+      display: flex;
+      .content {
+        max-width: 641px;
+        width: 100%;
+        padding-right: 17px;
+        margin-top: 42px;
+
+        .subTitle {
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #646464;
+          font-weight: 600;
+          line-height: 27%;
+        }
+        .title {
+          font-size: 50px;
+          text-transform: capitalize;
+          font-family: "Popins";
+          font-weight: 500;
+          line-height: 65px;
+          color: #212121;
+          max-width: 580px;
+        }
+
+        .last {
+          margin-top: 35px;
+
+        }
+
+        .desing-text {
+          h4 {
+            font-family: "Open Sans";
+            font-size: 288px;
+            font-weight: 700;
+            background-image: url(../img/james-lindsay-kVBzVaVa7Q0-unsplash\ 1.png);
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: contain;
+          }
+        }
+      }
+      .image {
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 140px 0;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          left: 20px;
+          top: 20px;
+          z-index: -1;
+          border-radius: 140px 0;
+          border: 2px solid #b0855b;
+        }
+      }
+    }
+  }
+}

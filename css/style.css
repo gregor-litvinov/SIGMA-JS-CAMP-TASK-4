@@ -16,8 +16,6 @@ h5,
 h6,
 ul,
 li,
-p,
-span,
 button {
   margin: 0;
   padding: 0;
@@ -26,17 +24,18 @@ button {
   font-weight: 600;
   color: #212121; }
 
-button {
-  padding: 1.2rem 1.5rem;
-  border-radius: 0.5rem;
-  color: white;
-  border: none;
-  font-size: 1.1rem; }
-
-.button-outline {
-  border-radius: 6px;
+.btn {
+  text-decoration: none;
+  background-color: #37806b;
   padding: 10px 20px;
-  border: 1px solid #5e6282; }
+  border-radius: 15px 0px;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  transform: 0.3s; }
+  .btn:hover {
+    background-color: #caa892; }
 
 .container {
   max-width: 1200px;
@@ -48,9 +47,27 @@ button {
 .none {
   display: none !important; }
 
+.image-line {
+  position: relative;
+  z-index: 1; }
+  .image-line img {
+    width: 100%;
+    height: 100%;
+    border-radius: 140px 0; }
+  .image-line:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 20px;
+    top: 20px;
+    z-index: -1;
+    border-radius: 140px 0;
+    border: 2px solid #b0855b; }
+
 .burger {
   position: absolute;
-  right: 20px;
+  right: 55px;
   top: 20px; }
 
 .menu__btn {
@@ -105,13 +122,16 @@ nav {
           transform: scale(1.2);
           color: #646464; }
       nav .links ul li.signup {
-        margin-right: 43px;
+        margin-left: 30px;
         background-color: #CAA892;
-        border-radius: 15px 0px; }
+        border-radius: 15px 0px;
+        transition: 0.3s; }
         nav .links ul li.signup a {
           color: #FFFFFF;
-          padding: 6px 18px 6px 18px;
+          padding: 10px 20px;
           text-transform: capitalize; }
+        nav .links ul li.signup:hover {
+          background-color: #37806b; }
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .container {
@@ -186,5 +206,345 @@ nav {
     margin: 0 30px 0 0; }
     nav .links ul li a {
       font-size: 13px; } }
+.start {
+  padding: 70px 0; }
+  .start .container .start-wrapper {
+    display: flex; }
+    .start .container .start-wrapper .content {
+      max-width: 641px;
+      width: 100%;
+      padding-right: 17px;
+      margin-top: 42px; }
+      .start .container .start-wrapper .content .subTitle {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #646464;
+        font-weight: 600;
+        line-height: 27%; }
+      .start .container .start-wrapper .content .title {
+        font-size: 72px;
+        text-transform: capitalize;
+        font-family: "Popins";
+        font-weight: 600;
+        line-height: 78px;
+        color: #212121;
+        max-width: 580px; }
+      .start .container .start-wrapper .content .description p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #646464; }
+      .start .container .start-wrapper .content .last {
+        margin-top: 20px; }
+    .start .container .start-wrapper .image {
+      position: relative;
+      z-index: 1; }
+      .start .container .start-wrapper .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 140px 0; }
+      .start .container .start-wrapper .image:after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        left: 20px;
+        top: 20px;
+        z-index: -1;
+        border-radius: 140px 0;
+        border: 2px solid #b0855b; }
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .start {
+    flex-direction: column; }
+
+  .start .image img {
+    height: 15rem;
+    margin-top: 4rem;
+    display: block; } }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .start-wrapper {
+    flex-direction: column; }
+
+  .start-wrapper .image img {
+    height: 40rem;
+    margin-top: 4rem;
+    display: none; }
+
+  .start-wrapper .content .title {
+    font-size: 35px;
+    line-height: 42px; } }
+.service {
+  padding: 100px 0; }
+  .service .container .row .service-title .service-title-heading h3 {
+    color: #646464;
+    font-family: "Popins";
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px; }
+  .service .container .row .service-title .service-title-heading h4 {
+    font-family: "Popins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 78px;
+    color: #212121; }
+  .service .container .service-card {
+    max-width: 477.23px; }
+    .service .container .service-card .service-card-sin {
+      display: flex;
+      background: #ffffff;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+      border-radius: 60px 0px;
+      padding: 40px 20px 40px 35px; }
+      .service .container .service-card .service-card-sin .card-text h3 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #212121; }
+      .service .container .service-card .service-card-sin .card-text p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.01em;
+        color: #646464; }
+
+.about-area .container .about-row {
+  display: flex; }
+  .about-area .container .about-row .about-col1 .image-line:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    right: 20px;
+    bottom: 20px;
+    z-index: -1;
+    border-radius: 140px 0;
+    border: 2px solid #b0855b; }
+  .about-area .container .about-row .about-col1 .image-line:after {
+    display: none; }
+  .about-area .container .about-row .about-col2 {
+    max-width: 503px;
+    padding: 20px 20px;
+    margin-left: 74px; }
+    .about-area .container .about-row .about-col2 .about-text .section-heading h4 {
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 500;
+      color: #646464;
+      margin-bottom: 61px; }
+    .about-area .container .about-row .about-col2 .about-text .section-heading h3 {
+      color: #212121;
+      font-family: "Poppins";
+      font-size: 48px;
+      font-weight: 500px;
+      line-height: 57px; }
+    .about-area .container .about-row .about-col2 .about-text .section-heading p {
+      color: #646464;
+      font-family: "Open Sans";
+      font-weight: 400;
+      line-height: 30px; }
+
+.success {
+  padding: 70px 0; }
+  .success .container .start-wrapper {
+    display: flex; }
+    .success .container .start-wrapper .content {
+      max-width: 641px;
+      width: 100%;
+      padding-right: 17px;
+      margin-top: 42px; }
+      .success .container .start-wrapper .content .subTitle {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #646464;
+        font-weight: 600;
+        line-height: 27%; }
+      .success .container .start-wrapper .content .title {
+        font-size: 50px;
+        text-transform: capitalize;
+        font-family: "Popins";
+        font-weight: 500;
+        line-height: 65px;
+        color: #212121;
+        max-width: 580px; }
+      .success .container .start-wrapper .content .last {
+        margin-top: 35px; }
+      .success .container .start-wrapper .content .desing-text h4 {
+        font-family: "Open Sans";
+        font-size: 288px;
+        font-weight: 700;
+        background-image: url(../img/james-lindsay-kVBzVaVa7Q0-unsplash\ 1.png);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: contain; }
+    .success .container .start-wrapper .image {
+      position: relative;
+      z-index: 1; }
+      .success .container .start-wrapper .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 140px 0; }
+      .success .container .start-wrapper .image:after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        left: 20px;
+        top: 20px;
+        z-index: -1;
+        border-radius: 140px 0;
+        border: 2px solid #b0855b; }
+
+footer {
+  margin: 6rem 0;
+  position: relative; }
+  footer .footer-wrapper {
+    padding: 80px 0;
+    display: grid;
+    max-width: 1920px;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #f8f8f8; }
+    footer .footer-wrapper .brand .logo {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 44px;
+      line-height: 66px; }
+      footer .footer-wrapper .brand .logo img {
+        margin-bottom: 20px; }
+    footer .footer-wrapper .brand .subTitle {
+      width: 80%;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 124.5%;
+      color: #5e6282; }
+    footer .footer-wrapper .content .title {
+      text-transform: capitalize;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 40px;
+      color: #212121; }
+    footer .footer-wrapper .content ul {
+      list-style-type: none; }
+      footer .footer-wrapper .content ul li {
+        margin: 1rem 0; }
+        footer .footer-wrapper .content ul li a {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: #646464;
+          text-decoration: none; }
+          footer .footer-wrapper .content ul li a:hover {
+            color: #37806b;
+            transition: 0.3s; }
+    footer .footer-wrapper .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      footer .footer-wrapper .social .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.4rem; }
+        footer .footer-wrapper .social .links .link {
+          justify-content: center; }
+          footer .footer-wrapper .social .links .link a {
+            display: flex;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #d5d5d5;
+            align-items: center;
+            color: #fff; }
+            footer .footer-wrapper .social .links .link a img:hover {
+              transition: 0.3s;
+              background-color: #37806b;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%; }
+      footer .footer-wrapper .social .app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        footer .footer-wrapper .social .app .title {
+          margin-bottom: 0.7rem;
+          font-weight: 500; }
+        footer .footer-wrapper .social .app .links {
+          display: flex;
+          gap: 1rem; }
+          footer .footer-wrapper .social .app .links img {
+            border-radius: 17.5px; }
+  footer .footer-bottom {
+    border-top: 1px solid #c4c4c4; }
+    footer .footer-bottom .fotter-botoom-text {
+      padding: 4px 0; }
+      footer .footer-bottom .fotter-botoom-text a {
+        text-decoration: none;
+        color: #37806b; }
+  footer .design {
+    position: absolute;
+    top: -50px; }
+    footer .design img {
+      height: 140px; }
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  footer .footer-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  footer span {
+    font-size: 1rem; } }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  footer {
+    font-size: 1.3rem; }
+
+  footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  footer span {
+    font-size: 2rem; }
+
+  .container .subscribe .contact input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem; }
+
+  footer .footer-wrapper .brand .logo {
+    text-align: center; }
+
+  footer .footer-wrapper .brand .subTitle {
+    width: 100%;
+    margin-bottom: 25px; }
+
+  .content {
+    text-align: center;
+    margin-bottom: 15px; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer .footer-wrapper .brand .logo {
+    font-size: 29px; }
+
+  footer .footer-wrapper .content .title {
+    font-size: 17px; }
+
+  footer .footer-wrapper .content ul li a {
+    font-size: 15px;
+    line-height: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

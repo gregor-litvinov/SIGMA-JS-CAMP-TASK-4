@@ -18,8 +18,6 @@ h5,
 h6,
 ul,
 li,
-p,
-span,
 button {
     margin: 0;
   padding: 0;
@@ -29,19 +27,21 @@ button {
   color: #212121;
 }
 
-button {
-  padding: 1.2rem 1.5rem;
-  border-radius: 0.5rem;
-  color: white;
-  border: none;
-  font-size: 1.1rem;
-}
+ .btn {
+            text-decoration: none;
+            background-color: #37806b;
+            padding: 10px 20px;
+            border-radius: 15px 0px;
+            color: #ffff;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            transform: 0.3s;
 
-.button-outline {
-  border-radius: 6px;
-  padding: 10px 20px;
-  border: 1px solid #5e6282;
-}
+            &:hover {
+              background-color: #caa892;
+            }
+          }
 
 .container {
   max-width: 1200px;
@@ -54,3 +54,27 @@ button {
 .none {
   display: none !important;
 }
+
+
+ .image-line {
+        position: relative;
+        z-index: 1;
+
+
+        img {
+           width: 100%;
+          height: 100%;
+          border-radius: 140px 0;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          left: 20px;
+          top: 20px;
+          z-index: -1;
+          border-radius: 140px 0;
+          border: 2px solid #b0855b;
+        }
+      }
