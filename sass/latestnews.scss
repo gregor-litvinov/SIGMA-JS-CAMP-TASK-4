@@ -1,0 +1,73 @@
+.latest-news {
+    padding: 80px 0;
+    .title {
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #646464;
+    }
+    .subtitle {
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 72px;
+        color: #212121;
+        margin-bottom: 100px;
+    }
+    .tile-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .tile-col {
+            max-width: 550px;
+            img {
+                border-radius: 100px 0px;
+                margin-bottom: 60px;
+            }
+            .tile-col_text {
+                margin-bottom: 45px;
+            }
+            span {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 28px;
+                color: #212121;
+            }
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+
+
+                color: #646464;
+            }
+            button {
+                padding: 10px;
+                border: 0px;
+                background: #37806B;
+                border-radius: 25px 0px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+                color: #FFFFFF;
+
+                &:hover {
+                  background: #CAA892;
+                }
+            }
+        }
+    }
+
+}

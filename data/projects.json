@@ -1,0 +1,46 @@
+{
+    "prodjects": [
+        {
+            "name": "Design 1",
+            "category": "design",
+            "title": "Design 1 Interior",
+            "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+        },
+        {
+            "name": "Architecture 1",
+            "category": "architecture",
+            "title": "Architecture 1 Interior",
+            "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+        },
+        {
+            "name": "Planning 3",
+            "category": "planning",
+            "title": "Planning 1 Interior",
+            "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+        },
+        {
+            "name": "Planning 2",
+            "category": "planning",
+            "title": "Planning 2 Interior",
+            "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+        },
+        {
+            "name": "Planning 3",
+            "category": "planning",
+            "title": "Planning 3 Interior",
+            "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+        },
+        {
+            "name": "Design 2",
+            "category": "design",
+            "title": "Design 2 Interior",
+            "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+        },
+        {
+            "name": "Architecture 2",
+            "category": "architecture",
+            "title": "Architecture 2 Interior",
+            "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+        },
+    ]
+}
