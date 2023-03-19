@@ -504,6 +504,53 @@ nav {
         left: -45px;
         top: 100px; }
 
+.registration .container .row .col .registration-text h3 {
+  color: #212121;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  position: relative; }
+  .registration .container .row .col .registration-text h3::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 400px;
+    background-color: #c4c4c4;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%); }
+.registration .container .row .col .registration-text p {
+  color: #646464;
+  font-weight: 400px;
+  line-height: 28px;
+  text-align: center; }
+.registration .container .row .col .registration-text .form {
+  margin-top: 61px;
+  width: 100%; }
+  .registration .container .row .col .registration-text .form .top-btn {
+    display: flex;
+    justify-content: space-evenly; }
+    .registration .container .row .col .registration-text .form .top-btn input {
+      width: 380px; }
+  .registration .container .row .col .registration-text .form .sub-btn {
+    margin-top: 39px;
+    margin-bottom: 30px; }
+    .registration .container .row .col .registration-text .form .sub-btn input {
+      width: 913px;
+      margin-left: 64px; }
+  .registration .container .row .col .registration-text .form label {
+    margin-top: 10px; }
+  .registration .container .row .col .registration-text .form input {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #eeeeee;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 0px; }
+
 footer {
   margin: 6rem 0;
   position: relative; }
