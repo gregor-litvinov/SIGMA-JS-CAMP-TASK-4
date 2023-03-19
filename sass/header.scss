@@ -31,6 +31,20 @@
   top: 8px;
 }
 
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 555;
+  .progressBar {
+    height: 8px;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    width: 0%;
+    z-index: 100;
+    transition: width 0.2s ease-out;
+  }
+};
+
 nav {
   padding: 2rem 0;
   display: flex;
@@ -70,14 +84,10 @@ nav {
           border-radius: 15px 0px;
           transition: 0.3s;
 
-
           a {
             color: #FFFFFF;
             padding: 10px 20px;
-            // padding: 6px 18px 6px 18px;
             text-transform: capitalize;
-
-
           }
           &:hover {
              background-color: #37806b;

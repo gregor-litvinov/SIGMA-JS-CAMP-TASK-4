@@ -26,7 +26,8 @@
 
       <header class="header">
       <div class="container">
-     <nav class="nav">
+        <div class="nav-wrapper">
+        <nav class="nav">
           <div class="nav-container">
             <div class="header-logo"><img src="./img/LOGO 1.svg" alt="Logo"></div>
             <input id="menu__toggle" type="checkbox" />
@@ -49,6 +50,8 @@
             </label>
           </div>
         </nav>
+        <div class="progressBar"></div>
+        </div>
         <section class="start">
           <div class="container">
             <div class="start-wrapper">
@@ -198,7 +201,7 @@
                 <div class="slider-slick" data-slick='{"slidesToShow": 2, "slidesToScroll": 2}'>
                   <div class="tile-wrapper">
                     <div class="tile">
-                      <img class="avatar" src="./img/avatar.png" alt="">
+                      <img class="avatar" src="./img/avatar.png" alt="avatar-1">
                       <div class="text-content">
                         <span class="name"><b>Louis Saville</b>/CEO at Google inc</span>
                         <p class="description">
@@ -211,7 +214,20 @@
                   </div>
                   <div class="tile-wrapper">
                     <div class="tile">
-                      <img class="avatar" src="./img/avatar.png" alt="">
+                      <img class="avatar" src="./img/Mask Gro.png" alt="avatar-2">
+                      <div class="text-content">
+                        <span class="name"><b>Rekha Varadwaz</b>/Manager at Nike inc</span>
+                        <p class="description">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore
+                          et dolore magna aliqua.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tile-wrapper">
+                    <div class="tile">
+                      <img class="avatar" src="./img/avatar.png" alt="avatar">
                       <div class="text-content">
                         <span class="name"><b>Louis Saville</b>/CEO at Google inc</span>
                         <p class="description">
@@ -224,20 +240,7 @@
                   </div>
                   <div class="tile-wrapper">
                     <div class="tile">
-                      <img class="avatar" src="./img/avatar.png" alt="">
-                      <div class="text-content">
-                        <span class="name"><b>Louis Saville</b>/CEO at Google inc</span>
-                        <p class="description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore
-                          et dolore magna aliqua.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tile-wrapper">
-                    <div class="tile">
-                      <img class="avatar" src="./img/avatar.png" alt="">
+                      <img class="avatar" src="./img/avatar.png" alt="avatar">
                       <div class="text-content">
                         <span class="name"><b>Louis Saville</b>/CEO at Google inc</span>
                         <p class="description">
@@ -260,8 +263,8 @@
               <h1 class="title">LETEST NEWS</h1>
               <h2 class="subtitle">From Our Blog</h2>
               <div class="tile-wrapper">
-                <div class="tile-col">
-                  <img src="./img/start-wreper1.jpg" alt="">
+                <div class="tile-col" data-entrance="from-left">
+                  <img src="./img/start-wreper1.jpg" alt="foto">
                   <div class="tile-col_text">
                     <span>2020 Interior Design Trends</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -269,8 +272,8 @@
                   </div>
                   <button>CONTINUE READING....</button>
                 </div>
-                <div class="tile-col">
-                  <img src="./img/start-wraper2.jpg" alt="">
+                <div class="tile-col" data-entrance="from-right">
+                  <img src="./img/start-wraper2.jpg" alt="foto">
                   <div class="tile-col_text">
                     <span>2020 Interior Design Trends</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -283,7 +286,6 @@
           </div>
         </div>
         </section>
-        
         <section class="registration">
           <div class="container">
             <div class="row">
@@ -291,44 +293,39 @@
                 <div class="registration-text text-center">
                   <h3>DON’T FORGET TO SIGN UP</h3>
                   <p>Find out early about all upcoming promotions and new product releases with our newsletter.</p>
-                  <form class="form">
+                  <form class="form" id="registration">
                       <div class="top-btn">
-
-                          <label for="name"></label>
-                         <input type="text" class="input-1" placeholder="Enter your name:" id="name" name="name" required>
-
-                 <label for="surname"></label>
-                 <input type="text" class="input-2" placeholder="Enter your surname:" id="surname" name="surname" required>
-
-                      </div>
-
-                      <div class="sub-btn">
-                           <label for="email"></label>
-                  <input type="email" class="input-3" placeholder="Enter your e-mail:" id="email" name="email" required>
-
-                      </div>
-
-
-                  <div class="btn-style">
-                    <button  type="submit" class="btn ">SUBSCRIBE</button>
-                  </div>
-
-</form>
-
-
+                          <div class="input-wrapper">
+                            <label for="name"></label>
+                            <input type="text" class="input-1" placeholder="Enter your name:" id="name" name="name" required>
+                          </div>
+                          <div class="input-wrapper">
+                            <label for="surname"></label>
+                            <input type="text" class="input-2" placeholder="Enter your surname:" id="surname" name="surname" required>
+                            </div>
+                             </div>
+                          <div class="sub-btn">
+                            <label for="email"></label>
+                            <input type="email" class="input-3" placeholder="Enter your e-mail:" id="email" name="email" required>
+                            </div>
+                          <div class="btn-style">
+                            <button  type="submit" class="btn" id="button-submit">SUBSCRIBE</button>
+                          </div>
+                      </form>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </header>
-       <footer>
+        <footer>
+          <div class="container">
           <div class="footer-wrapper">
-            <div class="brand">
-              <div class="logo"><img src="./img/LOGO 1.svg" alt="Logo"></div>
-              <div class="subTitle">
-                But i must explain to you all this mistaken idea of dencouncing pleasure.
-              </div>
+          <div class="brand">
+          <div class="logo"><img src="./img/LOGO 1.svg" alt="Logo"></div>
+          <div class="subTitle">
+              But i must explain to you all this mistaken idea of dencouncing pleasure.
+          </div>
             </div>
             <div class="content">
               <div class="title">Quick Links</div>
@@ -366,34 +363,32 @@
               </div>
             </div>
             <div class="content">
-                          <div class="social">
+              <div class="social">
               <div class="title">Follow Us</div>
               <div class="links">
                 <div class="link">
                   <a href="#">
-                  <img src="./img/12.svg" alt="">
+                  <img src="./img/12.svg" alt="social-foto">
                 </a>
                 </div>
                 <div class="link">
-
-                    <a href="#">
-                  <img src="./img/twitter (1).svg" alt="">
-                </a>
+                  <a href="#">
+                  <img src="./img/twitter (1).svg" alt="social-foto">
+                  </a>
+                  </div>
+                  <div class="link">
+                  <a href="#">
+                  <img src="./img/instagram (1).svg" alt="social-foto">
+                  </a>
+                  </div>
+                  <div class="link">
+                  <a href="#">
+                  <img src="./img/linked-in-logo-of-two-letters.svg" alt="social-foto">
+                  </a>
+                  </div>
                 </div>
-                <div class="link">
-                      <a href="#">
-                  <img src="./img/instagram (1).svg" alt="">
-                </a>
-                </div>
-                 <div class="link">
-                    <a href="#">
-                  <img src="./img/linked-in-logo-of-two-letters.svg" alt="">
-                </a>
-                </div>
+              </div>
             </div>
-
-              </div>
-              </div>
           </div>
           <div class="footer-bottom">
                 <div class="wrapper">
@@ -403,12 +398,16 @@
                 </div>
           </div>
           <div class="design">
-            <img src="./img/decoreFooter.svg" alt="">
+            <img src="./img/decoreFooter.svg" alt="decore-Foto">
           </div>
-
+          </div>
         </footer>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="./main.js"></script>
+         <div id="discount-modal" class="discount-modal">
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+        <script src="node_modules/scroll-entrance/src/scroll-entrance.js"></script>
+        <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

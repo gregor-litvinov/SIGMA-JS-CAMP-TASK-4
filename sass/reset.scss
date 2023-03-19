@@ -10,26 +10,12 @@ body {
   color: #646464;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-li,
-button {
-    margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #212121;
-}
+  $color-green-style: #37806b;
+  $color-brawn-style: #caa892;
 
  .btn {
             text-decoration: none;
-            background-color: #37806b;
+            background-color:  $color-green-style;
             padding: 10px 20px;
             border-radius: 15px 0px;
             color: #ffff;
@@ -39,8 +25,26 @@ button {
             transform: 0.3s;
 
             &:hover {
-              background-color: #caa892;
+              background-color: $color-brawn-style;
             }
+          }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  li,
+  button {
+          margin: 0;
+          padding: 0;
+          text-decoration: none;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          color: #212121;
           }
 
 .container {
@@ -60,9 +64,8 @@ button {
         position: relative;
         z-index: 1;
 
-
         img {
-           width: 100%;
+          width: 100%;
           height: 100%;
           border-radius: 140px 0;
         }
@@ -78,3 +81,14 @@ button {
           border: 2px solid #b0855b;
         }
       }
+
+
+
+  .design {
+          position: absolute;
+          top: -50px;
+    img {
+
+      height: 140px;
+    }
+  }

@@ -10,7 +10,6 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     background-color: #f8f8f8;
 
-
     .brand {
       .logo {
         font-family: "Poppins";
@@ -55,7 +54,7 @@ footer {
             color: #646464;
             text-decoration: none;
             &:hover {
-              color: #37806b;
+              color: $color-green-style;
               transition: 0.3s;
             }
           }
@@ -89,7 +88,7 @@ footer {
             img {
               &:hover {
                 transition: 0.3s;
-                background-color: #37806b;
+                background-color: $color-green-style;
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
@@ -130,16 +129,6 @@ footer {
       }
     }
   }
-
-  .design {
-          position: absolute;
-          top: -50px;
-    img {
-
-      height: 140px;
-    }
-  }
-
 }
 
 @media screen and (min-width: 360px) and (max-width: 480px) {

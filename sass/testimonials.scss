@@ -1,108 +1,111 @@
 .testimonials {
-    .slick-arrow {
-        border-radius: 50%;
-        right: 0;
-        top: 0;
-        left: unset;
-        &::before {
-            display: none;
-        }
+  .slick-arrow {
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    left: unset;
+    &::before {
+      display: none;
     }
-    .slick-prev {
-        right: 75px;
-        position: absolute;
-        width: 30px;
-        height: 29px;
-        box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
-        background-image: url('../img/Vector\ 1.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .slick-next {
-        top: -10px;
-        position: absolute;
-        width: 30px;
-        height: 29px;
-        box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
-        background-image: url('../img/Vector\ 1.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        transform: rotate(180deg);
-    }
-    .title {
-        text-align: center;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        color: #646464;
-    }
-    .subtitle {
-        text-align: center;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 72px;
-        color: #212121;
-        margin-bottom: 100px;
-    }
-    .tile-wrapper {
-        padding-left: 50px;
-        padding: 20px;
-        // border-radius: 70px 0px;
-        // overflow: hidden;
-    }
-    .tile {
-        display: flex;
-        margin: 0 30px;
-        padding: 41px 38px;
-        // background-color: #fff;
-        // background: #FFFFFF;
-        box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
-        border-radius: 70px 0px;
-        position: relative;
-        .text-content {
-            padding-left: 80px;
-        }
-        .avatar {
-            position: absolute;
-            border-radius: 35px 0px;
-            left: -50px;
-        }
-        &:after {
-            content: "”";
-            position: absolute;
-            top: 0;
-            right: 0;
-            font-family: 'Basic Sans SF';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 96px;
-            color: #B0855B;
-        }
-        .text-content {
-            .name {
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 33px;
-                color: #646464;
-                b {
-                    color: #212121;
-                }
+  }
+  .slick-prev {
+    right: 75px;
+    position: absolute;
+    width: 30px;
+    height: 29px;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    background-image: url("../img/Vector\ 1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
 
-            }
-            .description {
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 28px;
-                color: #646464;
-            }
-        }
+    &:hover {
+      background-color: $color-green-style;
     }
+  }
+  .slick-next {
+    top: -10px;
+    position: absolute;
+    width: 30px;
+    height: 29px;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    background-image: url("../img/Vector\ 1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+
+    &:hover {
+      background-color: $color-green-style;
+    }
+  }
+  .title {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #646464;
+  }
+  .subtitle {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    color: #212121;
+    margin-bottom: 100px;
+  }
+  .tile-wrapper {
+    padding-left: 50px;
+    padding: 20px;
+  }
+  .tile {
+    display: flex;
+    margin: 0 30px;
+    padding: 41px 38px;
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+    position: relative;
+    .text-content {
+      padding-left: 80px;
+    }
+    .avatar {
+      position: absolute;
+      border-radius: 35px 0px;
+      left: -50px;
+    }
+    &:after {
+      content: "”";
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-family: "Basic Sans SF";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      color: #b0855b;
+    }
+    .text-content {
+      .name {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #646464;
+        b {
+          color: #212121;
+        }
+      }
+      .description {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #646464;
+      }
+    }
+  }
 }

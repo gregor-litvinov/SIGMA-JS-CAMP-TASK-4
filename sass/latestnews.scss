@@ -45,22 +45,18 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 28px;
-                /* or 156% */
-
-
                 color: #646464;
             }
             button {
                 padding: 10px;
                 border: 0px;
-                background: #37806B;
+                background:  $color-green-style;
                 border-radius: 25px 0px;
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 28px;
-                /* or 156% */
                 color: #FFFFFF;
 
                 &:hover {
